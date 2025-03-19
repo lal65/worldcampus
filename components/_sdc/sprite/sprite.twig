@@ -1,0 +1,15 @@
+{% if link %}
+<a href="{{ link }}">
+  {% include '@psu-ooe/sprite/sprite.twig' %}
+  {% if label %}
+    <span class="visually-hidden">{{ label }}</span>
+  {% endif %}
+</a>
+{% else %}
+  <span>
+    {% include '@psu-ooe/sprite/sprite.twig' %}
+    {% if label %}
+      <span class="visually-hidden">{{ label }}</span>
+    {% endif %}
+  </span>
+{% endif %}
