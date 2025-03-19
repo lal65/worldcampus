@@ -5,10 +5,7 @@ base theme: false
 regions:
   disabled: "Disabled blocks"
   announcements: "Announcements"
-  branding: "Site branding"
-  utility: "Utility bar"
-  segmentation: "Segmentation"
-  primary_nav: "Primary navigation"
+  header: "Header"
   before_content: "Before content"
   content: "Content"
   aside: "Aside"
@@ -16,13 +13,7 @@ regions:
   after_content_small_viewports: 'After content (small viewports only)'
   floating: "Floating"
   modal: "Modal"
-  footer_top_first: "Footer top (first)"
-  footer_top_second: "Footer top (second)"
-  footer_top_third: "Footer top (third)"
-  footer_middle_first: "Footer middle (first)"
-  footer_middle_second: "Footer middle (second)"
-  footer_middle_third: "Footer middle (third)"
-  footer_bottom: "Footer bottom"
+  footer: "Footer"
 
 libraries:
   - worldcampus/smooth-scroll
