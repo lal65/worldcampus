@@ -1,0 +1,7 @@
+{
+    "name": "lal65/worldcampus",
+    "description": "A drupal theme binding for the World Campus Design System",
+    "type": "drupal-theme",
+    "minimum-stability": "stable",
+    "require": {}
+}
