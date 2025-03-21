@@ -1,1 +1,12 @@
-{% include '@psu-ooe/social-icons/social-icons.twig' %}
+{# @TODO: Hack! #}
+<div class="social-icons">
+  {% for social_icon in social_icons %}
+    {% if social_icon is iterable %}
+      {% set social_icon = social_icon|merge({
+        '#prefix': social_icon['#prefix'] ~ '<div class="social-icons__item">',
+        '#suffix': '</div>' ~ social_icon['#suffix'],
+      }) %}
+    {% endif %}
+    {{ social_icon }}
+  {% endfor %}
+</div>

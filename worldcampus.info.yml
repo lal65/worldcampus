@@ -16,7 +16,9 @@ regions:
   footer: "Footer"
 
 libraries:
+  - worldcampus/page
   - worldcampus/smooth-scroll
+  - worldcampus/xb-hacks
 
 libraries-extend:
   core/drupal.ajax:

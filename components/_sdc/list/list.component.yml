@@ -42,4 +42,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/list
+    - worldcampus/list

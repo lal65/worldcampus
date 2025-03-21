@@ -20,4 +20,4 @@ props:
       examples: ['Ayn Rand']
 libraryOverrides:
   dependencies:
-    - ooe/base
+    - worldcampus/base

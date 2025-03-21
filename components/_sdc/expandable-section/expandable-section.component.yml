@@ -60,4 +60,4 @@ slots:
 # @see https://github.com/PSU-OOE/components/tree/main/packages/accordion
 libraryOverrides:
   dependencies:
-    - ooe/expandable-section
+    - worldcampus/expandable-section

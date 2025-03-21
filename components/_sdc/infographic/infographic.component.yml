@@ -24,4 +24,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/infographic
+    - worldcampus/infographic

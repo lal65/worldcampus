@@ -48,4 +48,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/footer
+    - worldcampus/footer

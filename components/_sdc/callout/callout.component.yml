@@ -57,4 +57,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/callout
+    - worldcampus/callout

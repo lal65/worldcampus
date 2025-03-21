@@ -19,4 +19,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/social-icons
+    - worldcampus/social-icons

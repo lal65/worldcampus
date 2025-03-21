@@ -1,2 +1,13 @@
-{% set items = items|without(['#prefix', '#suffix']) %}
-{% include '@psu-ooe/grid/grid.twig' %}
+{% set column_map = {1: 'one-col', 2: 'two-col', 3: 'three-col', 4: 'four-col'} %}
+<div class="grid grid--{{ column_map[columns] ?: column_map[3] }}">
+  {% for item in items %}
+    {% if item is iterable %}
+      {% set item =
+      item|merge({
+        '#prefix': item['#prefix'] ~ '<div class="grid__item">',
+        '#suffix': '</div>' ~ item['#suffix'],
+      }) %}
+    {% endif %}
+    {{ item }}
+  {% endfor %}
+</div>

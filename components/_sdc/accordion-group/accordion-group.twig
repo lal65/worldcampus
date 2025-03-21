@@ -1,0 +1,14 @@
+{# @TODO: HACK! #}
+<div class="accordion-group">
+  {% for accordion in accordions %}
+    {# Wrap each accordion in a div and coerce its borderless state... #}
+    {% set accordion = accordion|merge({
+      '#prefix': accordion['#prefix'] ~ '<div class="accordion-group__accordion">',
+      '#suffix': '</div>' ~ accordion['#suffix'],
+      '#props': accordion['#props']|merge({
+        'borderless': true,
+      }),
+    }) %}
+    {{ accordion }}
+  {% endfor %}
+</div>

@@ -18,12 +18,9 @@ props:
         - 3
 slots:
   items:
-    type: string
     title: Grid items
     required: true
-    examples:
-      - Drop grid items in here.
 
 libraryOverrides:
   dependencies:
-    - ooe/grid
+    - worldcampus/grid

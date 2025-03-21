@@ -25,4 +25,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/header
+    - worldcampus/header

@@ -49,4 +49,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/layout-two-col
+    - worldcampus/layout-two-col

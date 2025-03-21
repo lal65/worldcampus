@@ -22,10 +22,10 @@ require_once implode(DIRECTORY_SEPARATOR, [__DIR__, 'includes', 'worldcampus.sug
  *   if there are dependencies, declare them
  * end component loop
  */
-function worldcampus_library_info_build(): array {
-
-  $libraries = [];
-
+function worldcampus_library_info_alter(array &$libraries, $extension) {
+  if ($extension !== 'worldcampus') {
+    return;
+  }
   /** @var \Drupal\Core\Extension\ThemeExtensionList $extension_theme_list */
   $extension_theme_list = \Drupal::service('extension.list.theme');
   $theme_path = $extension_theme_list->getPath('worldcampus');
@@ -58,7 +58,6 @@ function worldcampus_library_info_build(): array {
     if (file_exists($css_path)) {
       $libraries[$component->getFilename()]['css']['component'] = [str_replace($theme_path . '/', '', $css_path) => []];
     }
-
     // Resolve dependencies.
     $package_manifest = implode(DIRECTORY_SEPARATOR, [
       $component->getPathname(),
@@ -75,14 +74,13 @@ function worldcampus_library_info_build(): array {
       }
     }
   }
-  return $libraries;
+  file_put_contents('debug.txt', print_r($libraries, TRUE));
 }
 
 /**
  * Implements hook_js_settings_alter().
  */
 function worldcampus_js_settings_alter(array &$settings): void {
-
   if (array_key_exists('worldcampus', $settings) && array_key_exists('spinner_component', $settings['worldcampus'])) {
     $spinner = [
       '#type' => 'inline_template',

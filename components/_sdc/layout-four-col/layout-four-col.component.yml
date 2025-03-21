@@ -64,4 +64,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/layout-four-col
+    - worldcampus/layout-four-col

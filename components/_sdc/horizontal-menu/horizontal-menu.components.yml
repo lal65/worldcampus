@@ -14,4 +14,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/horizontal-menu
+    - worldcampus/horizontal-menu

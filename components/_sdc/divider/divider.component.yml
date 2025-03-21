@@ -24,4 +24,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/divider
+    - worldcampus/divider

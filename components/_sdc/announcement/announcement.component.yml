@@ -37,4 +37,4 @@ props:
 # @see https://github.com/PSU-OOE/components/tree/main/packages/alert
 libraryOverrides:
   dependencies:
-    - ooe/announcement
+    - worldcampus/announcement

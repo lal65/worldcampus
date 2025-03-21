@@ -113,4 +113,4 @@ slots:
 # @see https://github.com/PSU-OOE/components/tree/main/packages/accordion
 libraryOverrides:
   dependencies:
-    - ooe/accordion
+    - worldcampus/accordion

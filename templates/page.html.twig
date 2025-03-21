@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Overridden implementation to display a single page.
+ */
+#}
+
+
+{{ page.announcements }}
+{{ page.header }}
+{{ page.before_content }}
+
+{% if page.before_content or page.content or page.aside %}
+  {% set main_classes = [
+    'main-content',
+  ] %}
+  <div class="{{ main_classes|join(' ') }}">
+    {% if page.before_content or page.content %}
+      <div class="main-content__first">
+        {% block content %}
+          {{ page.content }}
+        {% endblock %}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+{{ page.after_content_all_viewports }}
+{{ page.after_content_small_viewports }}
+{{ page.footer }}
+{{ page.floating }}
+{{ page.modal }}

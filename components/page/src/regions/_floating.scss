@@ -1,0 +1,6 @@
+.region--floating {
+  position: fixed;
+  bottom: _rem(2.8);
+  right: _rem(2);
+  z-index: var(--z-index--floating);
+}

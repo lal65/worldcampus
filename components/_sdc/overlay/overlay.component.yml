@@ -59,4 +59,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/overlay
+    - worldcampus/overlay

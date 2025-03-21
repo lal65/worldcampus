@@ -11,6 +11,12 @@ admin-toolbar:
     - worldcampus/smooth-scroll
     - gin/gin_base
 
+xb-hacks:
+  version: 1.0.0
+  css:
+    component:
+      components/xb-hacks/dist/styles.css: { }
+
 smooth-scroll:
   version: 1.0.0
   js:
@@ -18,6 +24,12 @@ smooth-scroll:
   dependencies:
     - core/drupal
     - core/once
+
+page:
+  version: 1.0.0
+  css:
+    base:
+      components/page/dist/styles.css: { }
 
 # Form Styles
 form-actions:

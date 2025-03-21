@@ -10,6 +10,7 @@ use Drupal\Component\Utility\Xss;
 use Drupal\Core\Render\Element;
 use Drupal\Core\Render\Markup;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Url;
 use Drupal\webform\Entity\Webform;
 
 /**
@@ -356,7 +357,7 @@ function worldcampus_preprocess_menu(array &$variables): void {
     /** @var \Drupal\Core\Url $url */
     $url = $item['url'];
 
-    if ($url->toUriString() === 'route:<front>') {
+    if ($url instanceof Url && $url->toUriString() === 'route:<front>') {
 
       // Previously, we relied on Drupal's 'ActiveLinkResponseFilter' to do
       // this for us by adding an 'is-active' class to the homepage link. Since

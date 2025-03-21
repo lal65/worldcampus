@@ -46,4 +46,4 @@ slots:
     required: true
 libraryOverrides:
   dependencies:
-    - ooe/background-container
+    - worldcampus/background-container

@@ -34,4 +34,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/social-icon
+    - worldcampus/social-icon

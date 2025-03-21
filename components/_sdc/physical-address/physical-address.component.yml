@@ -39,4 +39,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/physical-address
+    - worldcampus/physical-address

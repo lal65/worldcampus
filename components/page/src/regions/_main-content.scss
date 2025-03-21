@@ -1,0 +1,45 @@
+.main-content {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  column-gap: _rem(4);
+  margin-bottom: _rem(5);
+
+  @include bp(xs) {
+    margin-bottom: _rem(6);
+  }
+
+  @include bp(l) {
+    margin-bottom: _rem(8);
+  }
+
+  &--with-sidebar {
+    margin-left: auto;
+    margin-right: auto;
+
+    @include bp(m) {
+      padding: 0 _rem(4);
+      max-width: _rem(119);
+
+      .region--content {
+        padding: 0;
+      }
+
+      .page-title {
+        padding: 0;
+      }
+    }
+  }
+
+  &__first {
+    flex: 1 0 calc(71% - _rem(2));
+  }
+
+  &__second {
+    display: none;
+
+    @include bp(m) {
+      display: initial;
+      flex: 0 1 calc(29% - _rem(2));
+    }
+  }
+}

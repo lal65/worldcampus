@@ -25,4 +25,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/card
+    - worldcampus/card

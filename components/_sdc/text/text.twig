@@ -1,5 +1,5 @@
 {% if wrap %}
-  <span class="text">{{ content }}</span>
+  <span class="text">{{ content|safe_html_in_props_hack }}</span>
 {% else %}
-  {{ content }}
+  {{ content|safe_html_in_props_hack }}
 {% endif %}

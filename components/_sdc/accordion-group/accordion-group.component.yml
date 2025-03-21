@@ -1,0 +1,26 @@
+$schema: 'https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json'
+name: Accordion group
+status: stable
+group: Organism/Accordion
+description: An accordion group component
+props:
+  type: object
+  properties:
+    section:
+      title: 'Section'
+      description: >
+        This section will be used in page tracking and will be sent to Google
+        Analytics when a user expands this accordion either through manual
+        activation or by landing on the page with a #fragment that expands it.
+      type: string
+
+slots:
+  accordions:
+    title: Accordions
+    description: Accordions to display.
+    required: true
+
+# @see https://github.com/PSU-OOE/components/tree/main/packages/accordion-group
+libraryOverrides:
+  dependencies:
+    - worldcampus/accordion-group

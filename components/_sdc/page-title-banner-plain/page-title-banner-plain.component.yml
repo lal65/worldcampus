@@ -22,8 +22,6 @@ props:
       type: string
       title: Subtitle after
       examples: ["Subtitle-after"]
-
-    image:
-      title: Image
-      $ref: json-schema-definitions://experience_builder.module/image
-      type: object
+libraryOverrides:
+  dependencies:
+    - worldcampus/page-title-banner-plain

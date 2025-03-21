@@ -58,4 +58,4 @@ slots:
 
 libraryOverrides:
   dependencies:
-    - ooe/layout-three-col
+    - worldcampus/layout-three-col

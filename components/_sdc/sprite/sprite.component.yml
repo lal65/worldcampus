@@ -129,4 +129,4 @@ props:
 
 libraryOverrides:
   dependencies:
-    - ooe/sprite
+    - worldcampus/sprite
